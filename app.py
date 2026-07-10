@@ -14,7 +14,7 @@ st.title("🚛 Panel Logístico y Gestión de Rutas")
 def load_data():
     # Cargar el Excel que generamos previamente
     try:
-        df = pd.read_excel("Clientes_Zonificados_y_Segmentados.xlsx", sheet_name="Base_Segmentada")
+        df = pd.read_excel("datos.xlsx", sheet_name="Base_Segmentada")
         return df
     except FileNotFoundError:
         st.error("No se encontró el archivo Excel. Asegúrate de que esté en la misma carpeta.")
